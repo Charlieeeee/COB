@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src='js/com.js'></script>
+    <script type="text/javascript" src='js/map.js'></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T76Tpl4D5QgXTMevV5SRYxBx"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</head>
+<body>
+<!-- 遮罩层 -->
+<!-- 遮罩层 -->
+<div class="sade" id="sade"> 
+	<div class="li-sades"></div>
+	<div class="li-sade-con clearfix">
+		<div class="li-sade-logo1 fl"><img src="images/logo1_02.png"></div>
+		<div class="li-sade-txt fl">
+			<div class="li-sade-txt1 clearfix">
+				<div class="li-sade-logo2 fl"><img src="images/logo2.png"></div>
+				<div class="li-sade-tit fl ">
+					<span id="li-sade-tit">这是文字</span>
+					<div class="li-sade-an">
+						<button id="bnt">确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 左侧的浮框 -->
+	<div class="floating_box" id="floating_box">
+		<div class="tops_img1"></div>
+		<div class="centers">
+			<ul>
+				<li ><a href="index.html">首页</a></li>
+				<li><a href="excellentcase.html">优秀案例</a></li>
+				<li><a href="aboutus.html">关于我们</a></li>
+				<li class="selected"><a href="contactus.html">联系我们</a></li>
+				<li><a href="servicehelp.html">帮助服务</a></li>
+				<li id="tops"><a href="javascript:;">返回顶部</a></li>
+			</ul>
+		</div>
+		<div class="tops_img2"></div>
+	</div>
+<!-- 右侧的小人 -->
+	<div class="people_cens" id="people_cens">
+		<div class="people_cens_tops"><a href="javascript:;"><img src="images/a28.png"></a></div>
+		<div class="people_cens_boms"><a href="javascript:;"><img src="images/a29.png"></a></div>
+	</div>
+<div class="li-all">
+	<!-- 头部bannner -->
+	<div class="li-bj1">
+		<div class="li-case-bj2w li-bj1-widt clearfix">
+			<div class="li-case-logo fl"> <img src="images/li-txtl.png" alt=""></div>
+			<div class="li-case-logoml fr clearfix" id="logoms">
+				<div class="li-case-nav fl" id="navs"> 
+					<ul class="clearfix">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="excellentcase.html">优秀案例</a></li>
+						<li><a href="aboutus.html">关于我们</a></li>
+						<li class="li-case-on"><a href="contactus.html">联系我们</a></li>
+						<li><a href="servicehelp.html">帮助服务</a></li>
+					</ul>
+				</div>
+				<div class="li-case-logom fl" id="imgs"><img src="images/pic15.png" alt=""></div>
+			</div>
+		</div>
+		<div class="li-case-call li-bj1-widt"><img src="images/call-li.png" alt=""></div>
+		<div class="li-bj9-con li-bj1-widt">
+			<div class="li-bj9-call">联系我们</div>
+			<div class="li-bj9-img">
+				<a href="javascript:void(0)">
+					<div class="li-bj9-img1">
+						<img src="images/li-a.png" alt="">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 内容部分 -->
+	<div class="li-par1">
+		<div class="li-part1-con clearfix">
+			<div class="li-part1-con1 fl">
+				<div class="li-part1-logo">
+					<img src="images/li-txt.png" alt="">
+				</div>
+				<div class="li-part1-addr clearfix">
+					<span>地址：</span>
+					<em>北京市昌平区沙河地铁站旁青年创业大厦B座4层3A22室</em>
+				</div>
+				<div class="li-part1-phone clearfix">
+					<div class="li-part1-phone_pic fl"><img src="images/lipic.png" alt=""></div>
+					<div class="li-part1-phone1 fl">
+						<span>电话：</span>
+						<em>+15321151886</em>
+					</div>					
+				</div>
+				<div class="li-part1-company">
+					公司是做iOS/Android APP交互设计 视觉设计 功能定制开发，微信公众平台，基于HTML5的手机站 交互设计 视觉设计 功能定制开发。提供Windows及Mac等多操作系统多平台的应用软件交互设计、视觉设计、应用端开发服务。从用户研究、需求沟通、草图方案、原型制图、视觉设计、定制开发、软件测试维护等全方位的为客户提供...
+				</div>
+			</div>
+			<div class="li-part1-con1  li-part1-conimg fr"><img src="images/map.png"></div>
+		</div>
+	</div>
+	<!-- part2 -->
+	<div class="li-part2" id="call">
+		<div class="li-part2-con">
+			<div class="li-part2-con1 clearfix">
+				<div class="li-part2-conl li-partall fl">
+					<div class="li-part2-txt">
+						您有什么想说的想做的或者对我们有什么意见和建议可以给我们留言，方便的话可以留下您的联系方式，我们会及时联系您，谢谢。
+					</div>
+					<div class="li-part2-addr clearfix">
+						<span>地址：</span>
+						<em>北京市昌平区沙河地铁站旁青年创业大厦B座4层3A22室</em>
+					</div>
+					<div class="li-part2-phone">						
+							<span>电话：</span>
+							<em>+15321151886</em>
+					</div>
+				</div>
+				<div class="li-part2-conr li-partall fr">
+					<div class="li-part2-an clearfix">
+						<div class="li-part2-an1 fl">
+							<input type="text" id="name" placeholder="名字" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')">
+						</div>
+						<div class="li-part2-an2 fr">
+							<input type="text" id="mail" placeholder="邮箱" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')">
+						</div>
+					</div>
+					<div class="li-part2-an3">
+							<textarea id="con" placeholder="请输入内容..." onkeyup="this.value=this.value.replace(/^ +| +$/g,'')"></textarea>
+					</div>
+					<div class="li-part2-but fr">
+						<button id="bnts">提交</button>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- part3 -->
+	<div class="li-part3">
+		<div style="width:100%;height:800px;" id="allmap"></div>
+	</div>
+</div>
+<!-- 底部 -->
+	<div class="footers" id="footers">
+		<div class="footers_cens">
+			<ul class="clearfix new_had">
+				<li><a href="index.html"><span>首页</span></a></li>
+				<li><a href="excellentcase.html"><span>优秀案例</span></a></li>
+				<li><a href="aboutus.html"><span>关于我们</span></a></li>
+				<li><a href="contactus.html"><span>联系我们</span></a></li>
+				<li><a href="servicehelp.html"><span>帮助服务</span></a></li>
+			</ul>
+			<div class="share_tos">
+				<ul class="clearfix">
+					<li><span>分享到：</span></li>
+					<li><a href="javascript:;"  class="jiathis_button_tsina"><img src="images/a56.png"></a></li>
+					<li><a href="javascript:;"  class="jiathis_button_xiaoyou"><img src="images/a57.png"></a></li>
+					<li><a href="javascript:;"  class="jiathis_button_weixin"><img src="images/a58.png"></a></li>
+					<li><a href="javascript:;"  class="jiathis_button_email"><img src="images/a59.png"></a></li>
+					<li><a href="javascript:;"  class="jiathis_button_cqq"><img src="images/a60.png"></a></li>
+					<li><a href="javascript:;"  class="jiathis_button_qzone"><img src="images/a61.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footers_back" id="footers_back"><span><em>&copy;</em>2016.7.06</span></div>
+	<!-- 底部end -->
+	<!-- 分享到的代码 -->
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+	<!-- 分享到的代码 END -->
+</body>
+<script>
+$(function(){
+
+	// 验证
+	var name=$('#name');
+	var mail=$('#mail');
+	var con=$('#con');
+	var bnts=$('#bnts');
+
+	// 邮箱
+	var search_str = /^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/;
+
+	//遮罩层 
+	var sade = $('#sade');
+	var tit = $('#li-sade-tit');
+	var bnt = $('#bnt');
+	
+	bnt.click(function() {
+		sade.hide();
+	});
+
+	function sadeShow(test)
+	{
+		sade.show()
+		tit.html(test);
+	}
+
+	bnts.click(function(){
+
+		if (name.val()=='') {
+				sadeShow('请输入姓名');
+                return false;
+			}else if(!search_str.test(mail.val())){       
+
+				sadeShow("邮箱的格式不正确！");  
+			     return false;    
+			}else if (con.val()=='') {
+				sadeShow("请输入内容");  
+			     return false;
+			}
+	})
+
+})
+	// 点击滑动到联系我们
+
+    var part2Height = $(".li-part2").offset().top;
+    $("body").on("click",".li-bj9-img1 img",function(e){
+        e.preventDefault();
+        $("body,html").animate({scrollTop:part2Height},1000)
+    })
+   // 鼠标经过菜单切换
+	var imgs = $('#imgs');
+	var navs = $('#navs');
+	var logoms =$('#logoms');
+
+	logoms.on('mouseover',function(){
+		navs.stop().animate({ left:0 });
+		imgs.stop().animate({ opacity:0 });
+	})
+	logoms.on('mouseout',function(){
+		navs.stop().animate({ left:615 });
+		imgs.stop().animate({ opacity:1 });
+	})
+</script>
+</html>	
