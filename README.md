@@ -6,6 +6,6 @@ COB
 		<a href="http://Charlieeeee.github.io/COB">http://Charlieeeee.github.io/COB</a>
 	</li>
 	<li>
-		<a href="http://meal.oschina.mopaasapp.com">http://meal.oschina.mopaasapp.com/html</a> 速度快
+		<a href="http://cob.oschina.mopaasapp.com">http://cob.oschina.mopaasapp.com</a> 速度快
 	</li>
 </ul> 
